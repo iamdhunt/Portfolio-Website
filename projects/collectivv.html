@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      LIVING LIFE FEARLESS » Dario Hunt, Full-Stack Digital Problem Solver
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="../imgs/logos/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/464f1956bb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../imgs/logos/name-logo-light.webp" alt=""
+        /></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link" tabindex="-1">Home</a>
+            <span class="nav__link--index">1</span>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#services" class="nav__link" tabindex="-1"
+              >My Services</a
+            >
+            <span class="nav__link--index">2</span>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#about" class="nav__link" tabindex="-1"
+              >About Me</a
+            >
+            <span class="nav__link--index">3</span>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#skills" class="nav__link" tabindex="-1"
+              >My Skills</a
+            >
+            <span class="nav__link--index">4</span>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#projects" class="nav__link" tabindex="-1"
+              >My Projects</a
+            >
+            <span class="nav__link--index">5</span>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#work" class="nav__link" tabindex="-1"
+              >My Work</a
+            >
+            <span class="nav__link--index">6</span>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link" tabindex="-1">Contact Me</a>
+            <span class="nav__link--index">7</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="project__header">
+      <div>
+        <p class="project_header--title">Collectivv</p>
+        <p>
+          <strong>Role:</strong> Founder · Creative Director · Designer ·
+          Developer
+        </p>
+        <div class="project_header--list">
+          <p class="project_header--list--tags">React</p>
+          <p class="project_header--list--tags">Full-Stack Development</p>
+          <p class="project_header--list--tags">Branding</p>
+          <p class="project_header--list--tags">Creative Direction</p>
+          <p class="project_header--list--tags">Marketing</p>
+          <p class="project_header--list--tags">SEO</p>
+        </div>
+        <p class="project__header--link">
+          <a href="https://livinglifefearless.co" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </p>
+      </div>
+      <div class="project_header--img">
+        <img
+          src="../imgs/projects/collectivv-app-1.webp"
+          alt="Collectivv website"
+          class="project__img"
+        />
+      </div>
+    </section>
+
+    <!-- Portfolio Item -->
+    <div class="project__body">
+      <h3>Overview</h3>
+      <p>
+        Collectivv is a creator-first community platform designed to prioritize
+        intentional discovery, curated content, and meaningful interaction over
+        algorithm-driven feeds.
+      </p>
+      <p>
+        What began as a concept to rethink digital community evolved into a
+        scalable product ecosystem — blending publishing tools, dynamic feeds,
+        messaging, robust tagging, following, and saving features, and
+        structured workflows into one cohesive platform.
+      </p>
+      <p>
+        As founder and product lead, I architected and developed the platform
+        end-to-end — from UX systems and database design to deployment
+        infrastructure and long-term scalability planning.
+      </p>
+      <h3>Product Strategy + Architecture</h3>
+      <p>
+        From collections and tagging systems to community spaces and workflow
+        templates, each feature was intentionally mapped to drive meaningful
+        interaction rather than passive scrolling.
+      </p>
+      <p>
+        The system architecture was designed for modular expansion — allowing
+        chat, audio streaming, workflow builders, and monetization tools to
+        integrate seamlessly without technical debt.
+      </p>
+      <h3>Full-Stack Development + Technical Infrastructure</h3>
+      <p>
+        Collectivv was developed as a full-stack application using a modern,
+        production-grade technology stack.
+      </p>
+      <p>
+        The frontend was built with React, React Router 7, TypeScript, and
+        Tailwind CSS to create a scalable, type-safe, and component-driven
+        interface. Validation and schema enforcement were handled with Zod,
+        while Drizzle ORM managed structured database interactions.
+      </p>
+      <p>
+        Authentication and user management were powered by Better Auth and
+        Supabase. Performance optimization and edge-ready caching were supported
+        through Upstash and Redis.
+      </p>
+      <p>
+        The platform is containerized with Docker and deployed on a self-hosted
+        VPS environment, configured with reverse proxies, firewall rules, and
+        server-level optimizations to ensure security, reliability, and control
+        over infrastructure.
+      </p>
+      <p>
+        This architecture enables high performance, controlled scaling, and
+        long-term product flexibility without reliance on rigid third-party
+        platforms.
+      </p>
+      <h3>Growth + Monetization Framework</h3>
+      <p>
+        Collectivv was architected with sustainable growth in mind. Monetization
+        pathways include premium tools, creator-driven ecosystems, and
+        subscription-ready infrastructure.
+      </p>
+      <p>
+        The marketing foundation centers on positioning, organic
+        discoverability, and community-driven growth — designed to scale without
+        heavy dependency on paid acquisition.
+      </p>
+      <h3>Impact</h3>
+      <ul>
+        <li>
+          Built and deployed a production-ready full-stack platform from concept
+          to infrastructure
+        </li>
+        <li>
+          Designed modular architecture supporting robust features and scalable
+          expansion
+        </li>
+        <li>
+          Established a secure, self-hosted deployment environment for full
+          technical ownership
+        </li>
+        <li>
+          Created a creator-first ecosystem centered on intentional discovery
+          and structured engagement
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer__link">
+        <a href="mailto:hello@dariohunt.com" class="footer__link--img"
+          ><img src="../imgs/logos/email-text-2.svg" alt="Email Me"
+        /></a>
+      </div>
+
+      <ul class="social-list">
+        <li class="social-list__item social-list__item--mobile">
+          <a
+            href="https://github.com/iamdhunt"
+            target="_blank"
+            class="social-list__link"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--mobile">
+          <a
+            href="https://contra.com/dario_hunt_uums642i"
+            target="_blank"
+            class="social-list__link social-list__link--contra"
+          >
+            <img src="../imgs/logos/contra-logo.webp" alt="Contra" />
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--mobile">
+          <a
+            href="https://instagram.com/iamdhunt"
+            target="_blank"
+            class="social-list__link"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--mobile">
+          <a
+            href="https://www.youtube.com/@iamdhunt"
+            target="_blank"
+            class="social-list__link"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+
+        <li class="social-list__item social-list__item--txt">
+          <a
+            href="https://github.com/iamdhunt"
+            target="_blank"
+            class="social-list__link"
+          >
+            GitHub
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--txt">
+          <a
+            href="https://contra.com/dario_hunt_uums642i"
+            target="_blank"
+            class="social-list__link"
+          >
+            Contra
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--txt">
+          <a
+            href="https://instagram.com/iamdhunt"
+            target="_blank"
+            class="social-list__link"
+          >
+            Instagram
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--txt">
+          <a
+            href="https://www.youtube.com/@iamdhunt"
+            target="_blank"
+            class="social-list__link"
+          >
+            YouTube
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

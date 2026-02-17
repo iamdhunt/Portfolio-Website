@@ -18,7 +18,7 @@
     <body>
         <header>
             <div class="logo">
-                <img src="imgs/logos/name-logo-10-alt-light.webp" alt="">
+                <img src="imgs/logos/name-logo-light.webp" alt="">
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -38,12 +38,20 @@
                         <span class="nav__link--index">3</span>
                     </li>
                     <li class="nav__item">
-                        <a href="#work" class="nav__link" tabindex="-1">My Work</a>
+                        <a href="#skills" class="nav__link" tabindex="-1">My Skills</a>
                         <span class="nav__link--index">4</span>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link" tabindex="-1">Contact Me</a>
+                        <a href="#projects" class="nav__link" tabindex="-1">My Projects</a>
                         <span class="nav__link--index">5</span>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link" tabindex="-1">My Work</a>
+                        <span class="nav__link--index">6</span>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" tabindex="-1">Contact Me</a>
+                        <span class="nav__link--index">7</span>
                     </li>
                 </ul>
             </nav>
@@ -101,6 +109,80 @@
             <img src="imgs/headshot3.webp" alt="" class="about-me__img">
          </section> <!-- / about -->
 
+         <!-- My Skills -->
+         <section class="my-skills" id="skills">
+            <h2 class="section__title section__title--skills">My Skills</h2>
+            <p class="section__subtitle section__subtitle--skills">A few of the tools and technologies I work with:</p>
+            <div class="skills__container">
+                <img src="imgs/logos/skills/wordpress-color.webp" title="WordPress" alt="WordPress" class="skills__img">
+                <img src="imgs/logos/skills/javascript-color.webp" title="JavaScript" alt="JavaScript" class="skills__img">
+                <img src="imgs/logos/skills/typescript-color.webp" title="TypeScript" alt="TypeScript" class="skills__img">
+                <img src="imgs/logos/skills/react-color.webp" title="React" alt="React" class="skills__img">
+                <img src="imgs/logos/skills/nextjs-color.webp" title="Next.js" alt="Next.js" class="skills__img">
+                <img src="imgs/logos/skills/react-router-7-color.webp" title="React Router 7" alt="React Router 7" class="skills__img">
+                <img src="imgs/logos/skills/docker-color.webp" title="Docker" alt="Docker" class="skills__img">
+                <img src="imgs/logos/skills/postgresql-color.webp" title="PostgreSQL" alt="PostgreSQL" class="skills__img">
+                <img src="imgs/logos/skills/premiere-pro-color.webp" title="Premiere Pro" alt="Premiere Pro" class="skills__img">
+                <img src="imgs/logos/skills/photoshop-color.webp" title="Photoshop" alt="Photoshop" class="skills__img">
+                <img src="imgs/logos/skills/illustrator-color.webp" title="Illustrator" alt="Illustrator" class="skills__img">
+            </div>
+         </section> <!-- / skills -->
+
+        <!-- My Projects -->
+         <section class="my-projects" id="projects">
+            <h2 class="section__title section__title--projects">My Projects</h2>
+            <p class="section__subtitle section__subtitle--projects">A few of the projects I've built:</p>
+            <div class="projects__container">
+                <div class="projects__item--wrapper">
+                    <div class="projects__item--img-wrapper">
+                        <img src="imgs/projects/collectivv-app-1.webp" alt="Collectivv website" class="projects__item--img">
+                    </div>
+                    <div class="projects__item__info">
+                        <h3 class="projects__item__info--title">Collectivv</h3>
+                        <div class="projects__item__info--links">
+                            <a href="https://collectivv.co" target="_blank">
+                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                            </a>
+                            <a href="projects/collectivv.html">
+                                <i class="fa-solid fa-circle-info"></i></i> Learn More
+                            </a>
+                        </div>
+                        <div class="projects__item__info--list">
+                            <p class="projects__item__info--list--tags">React</p>
+                            <p class="projects__item__info--list--tags">Full-Stack Development</p>
+                            <p class="projects__item__info--list--tags">Branding</p>
+                            <p class="projects__item__info--list--tags">Creative Direction</p>
+                            <p class="projects__item__info--list--tags">Marketing</p>
+                            <p class="projects__item__info--list--tags">SEO</p>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="projects__item--wrapper">
+                    <div class="projects__item--img-wrapper">
+                        <img src="imgs/projects/meme-machine-1.webp" alt="Infinite Meme Machine 3000 website" class="projects__item--img">
+                    </div>
+                    <div class="projects__item__info">
+                        <h3 class="projects__item__info--title">Infinite Meme Machine 3000</h3>
+                        <div class="projects__item__info--links">
+                            <a href="https://mememachine3000.com/" target="_blank">
+                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                            </a>
+                            <a href="projects/mememachine3000.html">
+                                <i class="fa-solid fa-circle-info"></i></i> Learn More
+                            </a>
+                        </div>
+                        <div class="projects__item__info--list">
+                            <p class="projects__item__info--list--tags">Next.js</p>
+                            <p class="projects__item__info--list--tags">Web Design</p>
+                            <p class="projects__item__info--list--tags">Web Development</p>
+                            <p class="projects__item__info--list--tags">Creative Direction</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+         </section> <!-- / projects -->
+
         <!-- My Work -->
          <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My Work</h2>
@@ -117,7 +199,7 @@
                                 <a href="https://livinglifefearless.co" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
                                 </a>
-                                <a href="living-life-fearless.html">
+                                <a href="work/living-life-fearless.html">
                                     <i class="fa-solid fa-circle-info"></i></i> Learn More
                                 </a>
                             </div>
@@ -127,22 +209,26 @@
                                 <a href="https://livinglifefearless.co" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
                                 </a>
-                                <a href="living-life-fearless.html">
+                                <a href="work/living-life-fearless.html">
                                     <i class="fa-solid fa-circle-info"></i></i> Learn More
                                 </a>
                             </div>
 
                             <div class="portfolio__item__card--bottom--list">
                                 <p class="portfolio__item__card--bottom--tags">Branding</p>
-                                <p class="portfolio__item__card--bottom--tags">Design</p>
+                                <p class="portfolio__item__card--bottom--tags">Graphic Design</p>
+                                <p class="portfolio__item__card--bottom--tags">Web Design</p>
                                 <p class="portfolio__item__card--bottom--tags">Web Development</p>
                                 <p class="portfolio__item__card--bottom--tags">Marketing</p>
                                 <p class="portfolio__item__card--bottom--tags">SEO</p>
+                                <p class="portfolio__item__card--bottom--tags">Ad Management</p>
+                                <p class="portfolio__item__card--bottom--tags">Creative Writing</p>
+                                <p class="portfolio__item__card--bottom--tags">Content Creation</p>
                                 
                             </div>                            
                         </div>                      
                     </div>
-                    <img src="imgs/llf-homepage.webp" alt="LIVING LIFE FEARLESS website" class="portfolio__img">
+                    <img src="imgs/work/llf-homepage.webp" alt="LIVING LIFE FEARLESS website" class="portfolio__img">
                  </div> <!-- / Portfolio item 01 -->
 
                 <!-- Portfolio item 02 -->
@@ -154,7 +240,7 @@
                                 <a href="https://anobs.co/" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
                                 </a>
-                                <a href="anobs.html">
+                                <a href="work/anobs.html">
                                     <i class="fa-solid fa-circle-info"></i></i> Learn More
                                 </a>
                             </div>
@@ -164,22 +250,23 @@
                                 <a href="https://anobs.co/" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
                                 </a>
-                                <a href="anobs.html">
+                                <a href="work/anobs.html">
                                     <i class="fa-solid fa-circle-info"></i></i> Learn More
                                 </a>
                             </div>
 
                             <div class="portfolio__item__card--bottom--list">
                                 <p class="portfolio__item__card--bottom--tags">Branding</p>
-                                <p class="portfolio__item__card--bottom--tags">Design</p>
+                                <p class="portfolio__item__card--bottom--tags">Web Design</p>
                                 <p class="portfolio__item__card--bottom--tags">Web Development</p>
+                                <p class="portfolio__item__card--bottom--tags">Business Strategy</p>
                                 <p class="portfolio__item__card--bottom--tags">Marketing</p>
                                 <p class="portfolio__item__card--bottom--tags">SEO</p>
 
                             </div>                            
                         </div>                      
                     </div>
-                    <img src="imgs/anobs-homepage.webp" alt="ANOBS website" class="portfolio__img">
+                    <img src="imgs/work/anobs-homepage.webp" alt="ANOBS website" class="portfolio__img">
                  </div> <!-- / Portfolio item 02 -->
 
                 <!-- Portfolio item 03 -->
@@ -191,7 +278,7 @@
                                 <a href="https://shop.livinglifefearless.co/" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
                                 </a>
-                                <a href="shop-llf.html">
+                                <a href="work/shop-llf.html">
                                     <i class="fa-solid fa-circle-info"></i></i> Learn More
                                 </a>
                             </div>
@@ -201,22 +288,25 @@
                                 <a href="https://shop.livinglifefearless.co/" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
                                 </a>
-                                <a href="shop-llf.html">
+                                <a href="work/shop-llf.html">
                                     <i class="fa-solid fa-circle-info"></i></i> Learn More
                                 </a>
                             </div>
 
                             <div class="portfolio__item__card--bottom--list">
                                 <p class="portfolio__item__card--bottom--tags">Branding</p>
-                                <p class="portfolio__item__card--bottom--tags">Design</p>
+                                <p class="portfolio__item__card--bottom--tags">Graphic Design</p>
+                                <p class="portfolio__item__card--bottom--tags">Web Design</p>
                                 <p class="portfolio__item__card--bottom--tags">Web Development</p>
+                                <p class="portfolio__item__card--bottom--tags">eCommerce</p>
                                 <p class="portfolio__item__card--bottom--tags">Marketing</p>
                                 <p class="portfolio__item__card--bottom--tags">SEO</p>
+                                <p class="portfolio__item__card--bottom--tags">Ad Management</p>
 
                             </div>                            
                         </div>                      
                     </div>
-                    <img src="imgs/shop-llf-homepage.webp" alt="shop.llf website" class="portfolio__img">
+                    <img src="imgs/work/shop-llf-homepage.webp" alt="shop.llf website" class="portfolio__img">
                  </div> <!-- / Portfolio item 03 -->
 
                  <!-- Portfolio item 04 -->
@@ -233,13 +323,18 @@
          <!-- Footer -->
           <footer class="footer" id="contact">
             <div class="footer__link">
-                <a href="mailto:iamdhunt@proton.me" class="footer__link--img"><img src="imgs/logos/Email-Text.svg"></a>
+                <a href="mailto:hello@dariohunt.com" class="footer__link--img"><img src="imgs/logos/email-text-2.svg" alt="Email Me"></a>
             </div> 
 
             <ul class="social-list">
                 <li class="social-list__item social-list__item--mobile">
                     <a href="https://github.com/iamdhunt" target="_blank" class="social-list__link">
                         <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item social-list__item--mobile">
+                    <a href="https://contra.com/dario_hunt_uums642i" target="_blank" class="social-list__link social-list__link--contra">
+                        <img src="imgs/logos/contra-logo.webp" alt="Contra">
                     </a>
                 </li>
                 <li class="social-list__item social-list__item--mobile">
@@ -256,6 +351,11 @@
                 <li class="social-list__item social-list__item--txt">
                     <a href="https://github.com/iamdhunt" target="_blank" class="social-list__link">
                         GitHub
+                    </a>
+                </li>
+                <li class="social-list__item social-list__item--txt">
+                    <a href="https://contra.com/dario_hunt_uums642i" target="_blank" class="social-list__link">
+                        Contra
                     </a>
                 </li>
                 <li class="social-list__item social-list__item--txt">
