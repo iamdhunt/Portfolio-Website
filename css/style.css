@@ -756,6 +756,10 @@ header {
     max-width: 50%;
   }
 }
+.footer__copyright {
+  margin-top: 2em;
+  font-size: 0.85em;
+}
 
 /* Individual portfolio items */
 
