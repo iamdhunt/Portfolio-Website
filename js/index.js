@@ -13,35 +13,43 @@ navLinks.forEach((link) => {
   });
 });
 
-// Horizontal Scroll Logic
+if (slider) {
+  // Horizontal Scroll Logic
 
-slider.addEventListener("click", (e) => {
-  const rect = slider.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const width = rect.width;
+  slider.addEventListener("click", (e) => {
+    const rect = slider.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const width = rect.width;
 
-  const scrollAmount = 650;
+    const scrollAmount = 650;
 
-  const leftZone = width * 0.25;
-  const rightZone = width * 0.75;
+    const leftZone = width * 0.25;
+    const rightZone = width * 0.75;
 
-  if (x < leftZone) {
-    slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-  } else if (x > rightZone) {
-    slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
-  }
-});
+    if (x < leftZone) {
+      slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    } else if (x > rightZone) {
+      slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  });
 
-slider.addEventListener("mousemove", (e) => {
-  const rect = slider.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const width = rect.width;
+  slider.addEventListener("mousemove", (e) => {
+    const rect = slider.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const width = rect.width;
 
-  if (x < width * 0.25) {
-    slider.style.cursor = "pointer"; // Left arrow
-  } else if (x > width * 0.75) {
-    slider.style.cursor = "pointer"; // Right arrow
-  } else {
-    slider.style.cursor = "default";
-  }
-});
+    if (x < width * 0.25) {
+      slider.style.cursor = "pointer"; // Left arrow
+    } else if (x > width * 0.75) {
+      slider.style.cursor = "pointer"; // Right arrow
+    } else {
+      slider.style.cursor = "default";
+    }
+  });
+}
+
+// Set current year in footer
+const yearSpan = document.getElementById("copyright-year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
